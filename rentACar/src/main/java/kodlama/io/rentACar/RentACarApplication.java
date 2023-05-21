@@ -13,7 +13,7 @@ public class RentACarApplication {
 	}
 
 	// Uygulama çalıştığı anda anatasyonları tarar. Ve @Bean'i gördüğü anda da bu bir nesne daha sonrasında buna biri
-	// constructor'ında ihtiyaç duyabilir der ve bu yüzden IOC referansını ekler. Yani bir tane ModelMapper üretir ve ihtiyacı
+	// constructor'ında ihtiyaç duyabilir der ve bu yüzden IOC'e referansını ekler. Yani bir tane ModelMapper üretir ve ihtiyacı
 	// olan yerde kullanır.
 	 @Bean
 	public ModelMapper getModelMapper(){

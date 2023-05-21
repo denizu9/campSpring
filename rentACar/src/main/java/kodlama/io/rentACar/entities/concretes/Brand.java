@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Table(name = "brands")
 @Data // Getter - Setter ve parametresiz constructor oluşturur.
@@ -20,5 +21,9 @@ public class Brand {
 
     @Column(name = "name")
     private String name;
+
+    //Bulunduğumuz nesne ilk yazılır, yani biz Brand classındayız. Bir brand var çok model var. One to Many
+    @OneToMany(mappedBy = "brand") // Marka -> modeller (mappedby) dediğimiz, hangi alan ile ilişkilendirecek demektir.
+    List<Model> models; // Bir arabanın modelleri vardır. One to Many
 
 }

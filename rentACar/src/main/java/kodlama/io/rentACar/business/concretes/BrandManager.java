@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 @Service // Bu sınıf bir Business nesnesidir diyoruz.
 @AllArgsConstructor // Burada BrandRepository için yaptığımız injection'ı yaptık. AllArgsConstructor ile.
-public class BrandManager implements BrandService {
+public class BrandManager implements BrandService{
 
     private BrandRepository brandRepository;
     private ModelMapperService modelMapperService;
